@@ -23,15 +23,19 @@ if ( answer5.toUpperCase() === 'JAVASCRIPT') {
   correct += 1;
 }
 
-// output results/rank
+// output results
+document.write("<p>You got " + correct + " out of 5 questions correct.</p>");
+
+// output rank
 if ( correct === 5 ) {
   document.write("<p><strong>You earned a gold crown!</strong></p>");
 } else if ( correct >= 3 ) {
   document.write("<p><strong>You earned a silver crown.</strong></p>");
 } else if (correct >= 1 ) {
   document.write("<p><strong>You, earned a bronze medal.</strong></p>");
-} else (correct >= 1 ) {
+} else {
   document.write("<p><strong>Well, sometime the bar eats you.</strong></p>");
 }
+
 
 
